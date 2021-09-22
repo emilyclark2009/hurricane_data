@@ -50,7 +50,13 @@ def hurricane_dict_data(names, months, years, max_sustained_winds, areas_affecte
     hurricane = {}
     #the following for loop adds a key,value pair to hurricane where the key is the name of the hurricane and the value is the dictionary of data of that hurricane
     for i in range(len(names)):
-        hurricane[names[i]] = {"Name": names[i], "Month": months[i], "Year": years[i], "Max Sustained Wind" : max_sustained_winds[i], "Areas Affected" : areas_affected[i], "Damage" : updated_damage[i], "Death": deaths[i]}
+        hurricane[names[i]] = {"Name": names[i], 
+                               "Month": months[i], 
+                               "Year": years[i], 
+                               "Max Sustained Wind" : max_sustained_winds[i], 
+                               "Areas Affected" : areas_affected[i], 
+                               "Damage" : updated_damage[i],
+                               "Death": deaths[i]}
     return hurricane
 
 #test
