@@ -66,8 +66,9 @@ hurricane = hurricane_dict_data(names, months, years, max_sustained_winds, areas
 
 #print(hurricane)
 # write your construct hurricane by year dictionary function here:
-hurricane_by_year = {}
+
 for value in hurricane.values():
+    hurricane_by_year = {}
     current_year = value["Year"]
     current_cane = value
     
